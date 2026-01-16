@@ -1,4 +1,4 @@
-@MeaningOfLife_HostAddress = http://localhost:5041
+@MeaningOfLife_HostAddress = http://localhost:5018
 
 GET {{MeaningOfLife_HostAddress}}/weatherforecast/
 Accept: application/json
