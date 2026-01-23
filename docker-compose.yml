@@ -1,0 +1,31 @@
+Services:
+
+  nginx:
+    image: dockerhubnavn/meaningoflife-web:latest
+    container_name: meaningoflife-web
+    build: ./Nginx
+    ports: 
+      - "80:80"
+    depends_on:
+      -meaningoflife-api
+  
+
+  meaningoflife-api:
+    image: dockerhubnavn/meaningoflife-api:latest
+    container_name: meaningoflife-api
+    build: ./MeaningOfLife
+    expose:
+      - "8080"
+    Environment: 
+      - ConnectionStrings__DefaultConnection=Server=meaningoflife-db;Database=MeaningOfLifeDb;User=ga-app;Password=secret123;
+    depends_on:
+      - meaningoflife-db
+  
+
+  meaningoflife-db:
+    image: dockerhubnavn/meaningoflife-db:latest
+    container_name: meaningoflife-db
+    build: ./MeaningOfLife-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword 
+
