@@ -1,4 +1,4 @@
-Services:
+services:
 
   nginx:
     image: dockerhubnavn/meaningoflife-web:latest
@@ -7,7 +7,7 @@ Services:
     ports: 
       - "80:80"
     depends_on:
-      -meaningoflife-api
+      - meaningoflife-api
   
 
   meaningoflife-api:
@@ -16,7 +16,7 @@ Services:
     build: ./MeaningOfLife
     expose:
       - "8080"
-    Environment: 
+    environment: 
       - ConnectionStrings__DefaultConnection=Server=meaningoflife-db;Database=MeaningOfLifeDb;User=ga-app;Password=secret123;
     depends_on:
       - meaningoflife-db
