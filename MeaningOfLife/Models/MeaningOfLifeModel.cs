@@ -1,5 +1,8 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MeaningOfLife.Models;
 
+[Table("MeaningOfLife")]
 public class MeaningOfLifeModel
 {
     public int Id { get; set; }
