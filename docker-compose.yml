@@ -1,7 +1,7 @@
 services:
 
   nginx:
-    image: dockerhubnavn/meaningoflife-web:latest
+    image: bensoil/meaningoflife-web:latest
     container_name: meaningoflife-web
     build: ./Nginx
     ports: 
@@ -11,7 +11,7 @@ services:
   
 
   meaningoflife-api:
-    image: dockerhubnavn/meaningoflife-api:latest
+    image: bensoil/meaningoflife-api:latest
     container_name: meaningoflife-api
     build: ./MeaningOfLife
     expose:
@@ -23,11 +23,11 @@ services:
   
 
   meaningoflife-db:
-    image: dockerhubnavn/meaningoflife-db:latest
+    image: bensoil/meaningoflife-db:latest
     container_name: meaningoflife-db
     build: ./MeaningOfLife-db
     environment:
       - MYSQL_ROOT_PASSWORD=rootpassword
     ports:
-    - "3306:3306"
+    - "3307:3306"
 
