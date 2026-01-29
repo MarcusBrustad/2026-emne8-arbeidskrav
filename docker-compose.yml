@@ -39,7 +39,7 @@ services:
     networks:
       - meaningoflife-network
 
-networks:
-  meaningoflife-network:
-    driver: bridge
+  networks:
+    meaningoflife-network:
+      driver: bridge
 
