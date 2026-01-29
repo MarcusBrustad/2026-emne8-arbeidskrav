@@ -18,3 +18,7 @@ Prosjektet går ut på å lage et docker-compose oppsett for koblingen mellom da
 
 ## Oppsett
 Begge har pushet containere til sin egen DockerHub. 
+
+
+[Marcus](https://hub.docker.com/repositories/brustad "Docker huben til Marcus")
+
