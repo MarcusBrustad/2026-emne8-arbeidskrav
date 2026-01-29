@@ -1,7 +1,7 @@
 services:
 
   nginx:
-    image: dockerhubnavn/meaningoflife-web:latest
+    image: dockerhubname/meaningoflife-web:latest
     container_name: meaningoflife-web
     build: ./Nginx
     ports: 
@@ -11,7 +11,7 @@ services:
   
 
   meaningoflife-api:
-    image: dockerhubnavn/meaningoflife-api:latest
+    image: dockerhubname/meaningoflife-api:latest
     container_name: meaningoflife-api
     build: ./MeaningOfLife
     expose:
@@ -23,7 +23,7 @@ services:
   
 
   meaningoflife-db:
-    image: dockerhubnavn/meaningoflife-db:latest
+    image: dockerhubname/meaningoflife-db:latest
     container_name: meaningoflife-db
     build: ./MeaningOfLife-db
     environment:
