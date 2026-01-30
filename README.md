@@ -16,13 +16,13 @@ Fokuset av projektet var satt på koblingen mellem tjenestene, hvor hver av dem 
 ## Prosjekt oversikt
 ```
 2026-Emne8-Arbeidskrav/
-├─ MeaningOfLife/
+├─ MeaningOfLife/   - Api delen
 │  ├─ Api - src/
 │  ├─ Dockerfile
-├─ MeaningOfLife-db/
+├─ MeaningOfLife-db/  - Database delen, med PostgreSQL
 │  ├─ init.sql
 │  ├─ Dockerfile
-├─ Nginx/
+├─ Nginx/            - Web delen, nginx satt opp mot api og "route"
 │  ├─ nginx.conf
 │  ├─ Dockerfile
 ├─ docker-compose.yml
