@@ -50,7 +50,7 @@ I docker-compose er det satt opp til Benjamins hub sånn at det er satt til én 
 
 **Man kan endre hvilken hub som brukes ved å endre i docker-compose.yml filen**
 
-*Eksempel*:
+*Eksempel*  
 **benjamin**
 ```yml
 nginx:
