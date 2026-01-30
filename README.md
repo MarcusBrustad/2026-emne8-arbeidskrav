@@ -72,4 +72,4 @@ For å starte opp, er det bare å kjøre kommandoen `docker-compose up -d` fra c
 
 Når alle 3 er oppe og kjører skal du kunne komme deg inn ved å bare gå til URLen [localhost/api/lifesmeaning](http://localhost/api/lifesmeaning)
 
-Viktig å presisere at det kjører med **http** istedenfor https, men det skal fungere å bare trykke URL linken der oppe.
+Viktig å presisere at det kjører med **http** istedenfor *https*, men det skal fungere å bare trykke URL linken der oppe.
