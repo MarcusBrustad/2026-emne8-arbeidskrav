@@ -1,7 +1,7 @@
 services:
 
   nginx:
-    image: dockerhubname/meaningoflife-web:latest
+    image: bensoil/meaningoflife-web:latest
     container_name: meaningoflife-web
     build: ./Nginx
     ports: 
@@ -9,11 +9,10 @@ services:
     depends_on:
       - meaningoflife-api
     networks:
-      - meaningoflife-network
-  
+      - meaningoflife-network  
 
   meaningoflife-api:
-    image: dockerhubname/meaningoflife-api:latest
+    image: bensoil/meaningoflife-api:latest
     container_name: meaningoflife-api
     build: ./MeaningOfLife
     expose:
@@ -24,10 +23,10 @@ services:
       - meaningoflife-db
     networks:
       - meaningoflife-network
-  
+
 
   meaningoflife-db:
-    image: dockerhubname/meaningoflife-db:latest
+    image: bensoil/meaningoflife-db:latest
     container_name: meaningoflife-db
     build: ./MeaningOfLife-db
     environment:
@@ -39,7 +38,7 @@ services:
     networks:
       - meaningoflife-network
 
-  networks:
-    meaningoflife-network:
-      driver: bridge
+networks:
+  meaningoflife-network:
+    driver: bridge
 
